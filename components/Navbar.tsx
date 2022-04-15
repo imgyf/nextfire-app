@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="navbar">
       <ul>
         <li>
-          <Link href="/">
+          <Link href="/" passHref>
             <button className="btn-logo">FEED</button>
           </Link>
         </li>
