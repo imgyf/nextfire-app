@@ -1,4 +1,5 @@
-// Loading Spinner
-export default function Loader({ show }) {
-  return show ? <div className="loader"></div> : null
+export default function Loader ({ show }: {
+  show: Boolean
+}): JSX.Element {
+  return show ? <div className='loader' /> : null
 }
