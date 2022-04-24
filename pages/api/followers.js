@@ -5,12 +5,9 @@ export default async (req, res) => { // 2
     // const username = req.body.TWuser
 
     try { // 4
-      const response = await fetch(`https://shopee.sg/Watch-Strap-for-Apple-Watch-Stainless-Steel-Bracelet-Series-1-2-3-4-5-6-7-SE-45mm-44mm-42mm-41mm-40mm-38mm-i.344726814.11762454429`)
+      const response = await fetch(`https://www.lazada.sg/products/dream-s-stretch-hiking-pants-men-summer-quick-dry-trousers-outdoor-joggers-cago-pants-male-travel-fishing-trekking-pants-i1398052965-s6324058177.html?laz_trackid=2:mm_150070944_51552096_2010602086:clkgg27f41g1e22tfn402v&mkttid=clkgg27f41g1e22tfn402v`)
       const htmlString = await response.text()
-      // const $ = cheerio.load(htmlString)
-      const $ = cheerio.load('<h2 class="title">Hello world</h2>');
-      $('h2.title').text('Hello there!');
-      $('h2').addClass('welcome');
+      const $ = cheerio.load(htmlString)
       // const searchContext = `a[href='/imgyf/followers']`
       // const followerCountString = $(searchContext)
       //   .text()

@@ -40,5 +40,5 @@ function SignOutButton () {
 }
 
 function UsernameForm () {
-  return null
+  return <h2>Username Form</h2>
 }
