@@ -17,7 +17,7 @@ export default function Navbar () {
         </li>
 
         {/* user is signed-in and has username */}
-        {username && (
+        {user && username && (
           <>
             <li className='push-left'>
               <Link href='/admin' passHref>
@@ -26,7 +26,7 @@ export default function Navbar () {
             </li>
             <li>
               <Link href={`/${username}`} passHref>
-                <Image src={user?.photoURL} alt='user-photo' />
+                <Image src={user?.photoURL} width={50} height={50} alt='user-photo' />
               </Link>
             </li>
           </>
